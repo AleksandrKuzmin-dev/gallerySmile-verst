@@ -11,9 +11,9 @@ const modals = () => {
                         e.preventDefault();
                         closeModal(allModals);
                             showModal(modal);
-                    }
-                })
-            })
+                    };
+                });
+            });
 
         close.addEventListener('click', () => {
             closeModal(allModals);
@@ -22,13 +22,13 @@ const modals = () => {
         modal.addEventListener('click', (e) => {
             if(e.target === modal){
                 closeModal(allModals);
-            }
+            };
         });
 
         document.addEventListener('keydown', (e) => {
             if (e.code == 'Escape' && modal.style.display != 'none'){
                 closeModal(allModals);
-            }
+            };
         });
     };
 
